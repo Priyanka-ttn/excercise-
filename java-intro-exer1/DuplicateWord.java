@@ -17,10 +17,10 @@ public class DuplicateWord {
 
             for(int j=i+1;j<word.length;j++)
             {
-                if (word[i].equals(word[j]) && !word[j].equals("x"))
+                if (word[i].equals(word[j]) && !word[j].equals("-1"))
                 {
                     count++;
-                    word[j] = "x";
+                    word[j] = "-1";
                 }
 
             }
