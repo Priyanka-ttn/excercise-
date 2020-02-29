@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+//    apply plugin: DatePlugin
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+//ques1................................
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+
+}
+//ques2......................................
+jar{
+    manifest{
+        attributes 'Main-Class': 'Main'
+
+    }
+}
+//ques4.........................................
+class DatePlugin implements Plugin<Project> {
+    void apply(Project project) {
+        project.task('ShowDate') {
+            dependsOn("build")
+            println "Date: " + new Date()
+        }
+    }
+}
+
+apply plugin: DatePlugin
+
+//ques5..........................
+
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/java', 'src/main/javaCode1', 'src/main/javaCode2']
+    }
+}
