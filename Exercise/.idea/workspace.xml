@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7be519aa-0425-4873-9d67-955caee7fd32" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YcBivkY7z4sjhxi40Ls8MqunWm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ttm.bootcamp.Student" />
+      <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ttm.bootcamp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7be519aa-0425-4873-9d67-955caee7fd32" name="Default Changelist" comment="" />
+      <created>1583232132027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583232132027</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="86" y="27" width="800" height="677" key="#Project_Structure" timestamp="1583317417439">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="86" y="27" width="800" height="677" key="#Project_Structure/57.27.1309.741@57.27.1309.741" timestamp="1583317417439" />
+    <state x="444" y="154" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583318683905">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="444" y="154" width="524" height="484" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/57.27.1309.741@57.27.1309.741" timestamp="1583318683905" />
+    <state x="519" y="83" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1583325627893">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="519" y="83" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/57.27.1309.741@57.27.1309.741" timestamp="1583325627893" />
+    <state width="1263" height="2" key="GridCell.Tab.0.bottom" timestamp="1583321485315">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="2" key="GridCell.Tab.0.bottom/57.27.1309.741@57.27.1309.741" timestamp="1583321485315" />
+    <state width="1263" height="2" key="GridCell.Tab.0.center" timestamp="1583321485312">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="2" key="GridCell.Tab.0.center/57.27.1309.741@57.27.1309.741" timestamp="1583321485312" />
+    <state width="1263" height="2" key="GridCell.Tab.0.left" timestamp="1583321485311">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="2" key="GridCell.Tab.0.left/57.27.1309.741@57.27.1309.741" timestamp="1583321485311" />
+    <state width="1263" height="2" key="GridCell.Tab.0.right" timestamp="1583321485314">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="2" key="GridCell.Tab.0.right/57.27.1309.741@57.27.1309.741" timestamp="1583321485314" />
+    <state x="157" y="125" width="1109" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1583341076128">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="157" y="125" width="1109" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog/57.27.1309.741@57.27.1309.741" timestamp="1583341076128" />
+    <state x="157" y="125" width="1109" height="543" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1583340996680">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="157" y="125" width="1109" height="543" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/57.27.1309.741@57.27.1309.741" timestamp="1583340996680" />
+    <state x="367" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583382678827">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="367" y="224" key="com.intellij.ide.util.TipDialog/57.27.1309.741@57.27.1309.741" timestamp="1583382678827" />
+    <state x="456" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1583325493950">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="456" y="27" width="500" height="741" key="refactoring.ChangeSignatureDialog/57.27.1309.741@57.27.1309.741" timestamp="1583325493950" />
+  </component>
+</project>
