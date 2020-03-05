@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ce69d3f-5576-4696-8e27-f9408350f287" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YhwbfTkyiM5A5jHDpbk1fQaC58" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebDemo" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ce69d3f-5576-4696-8e27-f9408350f287" name="Default Changelist" comment="" />
+      <created>1583408206923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583408206923</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="757" y="191" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1583408921492">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="757" y="191" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/57.27.1309.741@57.27.1309.741" timestamp="1583408921492" />
+    <state x="494" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583408269647">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="494" y="154" width="424" height="484" key="FileChooserDialogImpl/57.27.1309.741@57.27.1309.741" timestamp="1583408269647" />
+    <state width="1263" height="294" key="GridCell.Tab.0.bottom" timestamp="1583409423436">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="294" key="GridCell.Tab.0.bottom/57.27.1309.741@57.27.1309.741" timestamp="1583409423436" />
+    <state width="1263" height="294" key="GridCell.Tab.0.center" timestamp="1583409423435">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="294" key="GridCell.Tab.0.center/57.27.1309.741@57.27.1309.741" timestamp="1583409423435" />
+    <state width="1263" height="294" key="GridCell.Tab.0.left" timestamp="1583409423435">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="294" key="GridCell.Tab.0.left/57.27.1309.741@57.27.1309.741" timestamp="1583409423435" />
+    <state width="1263" height="294" key="GridCell.Tab.0.right" timestamp="1583409423436">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state width="1263" height="294" key="GridCell.Tab.0.right/57.27.1309.741@57.27.1309.741" timestamp="1583409423436" />
+    <state x="367" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1583408211211">
+      <screen x="57" y="27" width="1309" height="741" />
+    </state>
+    <state x="367" y="224" key="com.intellij.ide.util.TipDialog/57.27.1309.741@57.27.1309.741" timestamp="1583408211211" />
+  </component>
+</project>
