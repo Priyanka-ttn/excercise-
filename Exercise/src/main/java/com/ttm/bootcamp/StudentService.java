@@ -4,14 +4,12 @@ import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.metatype.annotations.Designate;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Component()
 @Designate(ocd=ClassCongifService.class)
 public class StudentService implements Service1 {
 
-    //List<Student> list = new ArrayList<Student>();
     private int num;
     private int marks;
     @Activate

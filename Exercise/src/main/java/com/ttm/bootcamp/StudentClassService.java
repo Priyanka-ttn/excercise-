@@ -4,7 +4,7 @@ import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.metatype.annotations.Designate;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
 @Component(service = Service2.class , property = {"version =1.0","service.description= this is the version 1 of New Service",
         "serice.vendors=TTN"})
 public class StudentClassService implements Service2{
-    List<Student> list = new ArrayList<Student>();
+    private List<Student> list = new ArrayList<Student>();
 
 
 
