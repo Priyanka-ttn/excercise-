@@ -14,7 +14,10 @@ import java.io.PrintWriter;
 public class FormRegistration extends HttpServlet {
     private String message;
     public void init() throws ServletException {
-        message = "This is initialization method of servlet..";
+        System.out.println("This is initialization method of servlet..");
+    }
+    public void destroy() {
+        System.out.println("Servelet is destroyed...");
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,7 +28,6 @@ public class FormRegistration extends HttpServlet {
 
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h1>" + message + "</h1>");
         String str = "<table border>";
         str += "<thead>";
         str += "<th>Email</th>";
@@ -45,7 +47,5 @@ public class FormRegistration extends HttpServlet {
         out.write(str);
         out.flush();
     }
-    public void destroy() {
-        // Finalization code...
-    }
+
 }
