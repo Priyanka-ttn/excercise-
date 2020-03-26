@@ -25,7 +25,7 @@ import java.util.*;
 public class ServletSorting extends SlingSafeMethodsServlet {
     @Override
     protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
-//           response.getWriter().print("second");
+        response.getWriter().println("Ascending.");
 
         Resource resource = request.getResourceResolver().getResource("/content/devices/Laptop");
         Resource resource1 = request.getResourceResolver().getResource("/content/devices/Mobile");
@@ -50,18 +50,25 @@ public class ServletSorting extends SlingSafeMethodsServlet {
         } catch (RepositoryException e) {
             e.printStackTrace();
         }
-//        response.getWriter().println(result_laptop);
-//        response.getWriter().println(result_laptop2);
-//        response.getWriter().println(result_mobile);
-//        response.getWriter().println(result_mobile2);
 
         List<Device> device = new ArrayList<Device>();
-        device.add(new Device(result_laptop2,result_laptop));
         device.add(new Device(result_mobile2,result_mobile));
+        device.add(new Device(result_laptop2,result_laptop));
 
+        Collections.sort(device, new Comparator <Device>(){
+            public int compare(Device o1, Device o2) {
+                return  o1.getCreated().compareTo(o2.getCreated());
+            }
+        });
         response.getWriter().println(device);
 
-
+        Collections.sort(device, new Comparator <Device>(){
+            public int compare(Device o1, Device o2) {
+                return  -o1.getCreated().compareTo(o2.getCreated());
+            }
+        });
+        response.getWriter().println("descending..");
+        response.getWriter().println(device);
 
     }
 }
