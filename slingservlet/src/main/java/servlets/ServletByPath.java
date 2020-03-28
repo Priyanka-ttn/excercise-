@@ -11,11 +11,11 @@ import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.servlet.Servlet;
 import java.io.IOException;
-import java.util.ArrayList;
-
-import java.util.List;
+import java.util.*;
 
 @Component
         (service = Servlet.class,
@@ -32,15 +32,36 @@ public class ServletByPath extends SlingSafeMethodsServlet {
 
         Iterable<Resource> child= resourceResolver.getResource("/content/devices").getChildren();
 
-        List<ValueMap> childList = new ArrayList<ValueMap>();
+        String title = "";
+        String created = "";
+
+        List<Device> childList = new ArrayList<Device>();
         for(Resource resource : child){
-            ValueMap valueChild = resource.getValueMap();
-            childList.add(valueChild);
-        }
 
-        for (ValueMap valueMap:childList){
-            response.getWriter().print(valueMap);
+            Node node = resource.adaptTo(Node.class);
+            try {
+                title = node.getName();
+                created = node.getProperty("jcr:created").getValue().getString();
+            } catch (RepositoryException e) {
+                e.printStackTrace();
+            }
+            childList.add(new Device(title,created));
         }
+        response.getWriter().println("Ascending.....");
+        Collections.sort(childList, new Comparator<Device>(){
+            public int compare(Device o1, Device o2) {
+                return  o1.getCreated().compareTo(o2.getCreated());
+            }
+        });
+        response.getWriter().println(childList);
 
-        }
+        Collections.sort(childList, new Comparator <Device>(){
+            public int compare(Device o1, Device o2) {
+                return  -o1.getCreated().compareTo(o2.getCreated());
+            }
+        });
+        response.getWriter().println("Descending..");
+        response.getWriter().println(childList);
+
+    }
 }
