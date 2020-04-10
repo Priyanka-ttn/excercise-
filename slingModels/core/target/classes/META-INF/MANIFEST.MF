@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1586529718544
+Bundle-Category: slingModels
+Bundle-Description: "Core bundle for slingModels"
+Bundle-ManifestVersion: 2
+Bundle-Name: slingModels - Core
+Bundle-SymbolicName: slingModels.core
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_232 (Azul Systems, Inc.)
+Export-Package: com.slingModels.core.filters;version="1.0";uses:="java
+ x.servlet",com.slingModels.core.listeners;version="1.0";uses:="org.os
+ gi.service.event",com.slingModels.core.models;version="1.0";uses:="ja
+ vax.annotation,org.apache.sling.api.resource,org.apache.sling.models.
+ annotations,org.apache.sling.models.annotations.injectorspecific",com
+ .slingModels.core.schedulers;version="1.0",com.slingModels.core.servl
+ ets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org.apach
+ e.sling.api.servlets"
+Import-Package: com.day.cq.wcm.api;version="[1.27,2)",com.slingModels.
+ core.filters;version="[1.0,2)",com.slingModels.core.listeners;version
+ ="[1.0,2)",com.slingModels.core.schedulers;version="[1.0,2)",com.slin
+ gModels.core.servlets;version="[1.0,2)",javax.annotation;version="[1.
+ 3,2)",javax.inject;version="[1.0,2)",javax.servlet;version="[3.1,4)",
+ org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.request;v
+ ersion="[2.4,3)",org.apache.sling.api.resource;version="[2.11,3)",org
+ .apache.sling.api.servlets;version="[2.2,3)",org.apache.sling.models.
+ annotations;version="[1.5,2)",org.apache.sling.models.annotations.inj
+ ectorspecific;version="[1.1,2)",org.apache.sling.settings;version="[1
+ .3,2)",org.osgi.service.event;version="[1.3,2)",org.slf4j;version="[1
+ .7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ,osgi.service;objectClass:List<String>="javax.servlet.Servlet",osgi.s
+ ervice;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.slingModels.core.filters.LoggingFilter
+ .xml,OSGI-INF/com.slingModels.core.listeners.SimpleResourceListener.x
+ ml,OSGI-INF/com.slingModels.core.schedulers.SimpleScheduledTask.xml,O
+ SGI-INF/com.slingModels.core.servlets.SimpleServlet.xml
+Sling-Model-Packages: com.slingModels.core.models
+Tool: Bnd-4.2.0.201903051501
+

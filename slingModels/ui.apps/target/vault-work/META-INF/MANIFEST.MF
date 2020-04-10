@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: slingModels - UI apps
+Content-Package-Roots: /apps/slingModels,/etc/packages/adobe/cq60/core
+ .wcm.components.all-2.5.0.zip,/etc/packages/adobe/cq60/core.wcm.compo
+ nents.examples-2.5.0.zip
+Implementation-Version: 1.0
+Built-By: priyanka
+Implementation-Vendor-Id: aem.slingModels
+Import-Package: com.adobe.cq.sightly;version="[3.2.0,4.0.0)",org.apach
+ e.sling.api;version="[2.3.3,3.0.0)",org.apache.sling.scripting.sightl
+ y.pojo;version="[1.0.1,2.0.0)"
+Content-Package-Type: mixed
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_232
+Content-Package-Description: UI apps package for slingModels
+Content-Package-Id: slingModels:slingModels.ui.apps:1.0
+

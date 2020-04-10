@@ -1,0 +1,5 @@
+com/slingModels/core/models/HelloWorldModelTest.class
+com/slingModels/core/filters/LoggingFilterTest.class
+com/slingModels/core/servlets/SimpleServletTest.class
+com/slingModels/core/schedulers/SimpleScheduledTaskTest.class
+com/slingModels/core/listeners/SimpleResourceListenerTest.class
