@@ -2,7 +2,10 @@ package com.slingModels.core.models;
 
 
 import org.apache.sling.api.resource.Resource;
+//import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -11,28 +14,31 @@ import java.time.Period;
 import java.util.Calendar;
 import java.util.Date;
 
-@Model(adaptables = Resource.class)
+@Model(adaptables = Resource.class )
 public class MyDetails {
-    @Inject
+    @Inject @Optional @Default(values="defaultValue")
     private String firstname;
 
-    @Inject
+    @Inject @Optional @Default(values="defaultValue")
     private String lastname;
 
-    @Inject
-    private Date date;
+    @Inject @Optional
+    private Calendar date;
 
-    @Inject
+    @Inject @Optional  @Default(values="Single")
     private String marital;
 
-    @Inject
+    @Inject @Optional  @Default(values="male")
     private String gender;
 
     private String fullname;
     private int age;
     private String honorific;
 
-    @PostConstruct
+    public MyDetails() {
+    }
+
+ @PostConstruct
     protected void init(){
         fullname = firstname+" "+lastname;
         if(gender.equals("male")){
@@ -47,6 +53,19 @@ public class MyDetails {
         age = ageGet();
     }
 
+    private int ageGet() {
+        if (date == null) {
+            return 0;
+        } else {
+            int year = date.get(Calendar.YEAR);
+            int month = date.get(Calendar.MONTH) + 1;
+            int d = date.get(Calendar.DATE);
+            LocalDate l1 = LocalDate.of(year, month, d);
+            LocalDate now = LocalDate.now();
+            Period diff = Period.between(l1, now);
+            return diff.getYears();
+        }
+    }
     public String getFullname() {
 
         return fullname;
@@ -59,16 +78,6 @@ public class MyDetails {
         return honorific;
     }
 
-    private int ageGet(){
-        Calendar c = Calendar.getInstance();
-        c.setTime(date);
-        int year = c.get(Calendar.YEAR);
-        int month = c.get(Calendar.MONTH) + 1;
-        int date = c.get(Calendar.DATE);
-        LocalDate l1 = LocalDate.of(year, month, date);
-        LocalDate now = LocalDate.now();
-        Period diff = Period.between(l1, now);
-        return diff.getYears();
-    }
+
 
 }

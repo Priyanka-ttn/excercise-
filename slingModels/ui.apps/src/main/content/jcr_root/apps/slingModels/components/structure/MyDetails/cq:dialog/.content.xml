@@ -35,7 +35,7 @@
                                                     jcr:title="firstname"
                                                     fieldLabel="firstname"
                                                     name="./firstname"
-                                                    />
+                                            />
 
                                             <lastname
                                                     jcr:primaryType="nt:unstructured"
@@ -85,8 +85,7 @@
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
                                                     fieldLabel="Date"
                                                     name="./date"
-                                                    required="{Boolean}true"/>
-
+                                            />
 
 
                                         </items>

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1586529718544
+Bnd-LastModified: 1586967957562
 Bundle-Category: slingModels
 Bundle-Description: "Core bundle for slingModels"
 Bundle-ManifestVersion: 2
