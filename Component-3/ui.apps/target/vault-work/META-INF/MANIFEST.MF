@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Implementation-Title: comp3 - UI apps
+Content-Package-Roots: /apps/comp3,/etc/packages/adobe/cq60/core.wcm.c
+ omponents.all-2.5.0.zip,/etc/packages/adobe/cq60/core.wcm.components.
+ examples-2.5.0.zip
+Implementation-Version: 1.0
+Built-By: priyanka
+Implementation-Vendor-Id: aem.component3
+Import-Package: com.adobe.cq.sightly;version="[3.2.0,4.0.0)",org.apach
+ e.sling.api;version="[2.3.3,3.0.0)",org.apache.sling.scripting.sightl
+ y.pojo;version="[1.0.1,2.0.0)"
+Content-Package-Type: mixed
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_232
+Content-Package-Description: UI apps package for comp3
+Content-Package-Id: comp3:comp3.ui.apps:1.0
+

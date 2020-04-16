@@ -1,0 +1,5 @@
+comp3/core/models/HelloWorldModelTest.class
+comp3/core/schedulers/SimpleScheduledTaskTest.class
+comp3/core/servlets/SimpleServletTest.class
+comp3/core/filters/LoggingFilterTest.class
+comp3/core/listeners/SimpleResourceListenerTest.class

@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1587024199987
+Bundle-Category: comp3
+Bundle-Description: "Core bundle for comp3"
+Bundle-ManifestVersion: 2
+Bundle-Name: comp3 - Core
+Bundle-SymbolicName: comp3.core
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_232 (Azul Systems, Inc.)
+Export-Package: comp3.core.filters;version="1.0";uses:="javax.servlet"
+ ,comp3.core.listeners;version="1.0";uses:="org.osgi.service.event",co
+ mp3.core.models;version="1.0";uses:="com.adobe.cq.sightly,javax.annot
+ ation,org.apache.sling.api.resource,org.apache.sling.models.annotatio
+ ns,org.apache.sling.models.annotations.injectorspecific",comp3.core.s
+ chedulers;version="1.0",comp3.core.servlets;version="1.0";uses:="java
+ x.servlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: com.adobe.cq.sightly;version="[3.2,4)",com.day.cq.wcm.
+ api;version="[1.27,2)",comp3.core.filters;version="[1.0,2)",comp3.cor
+ e.listeners;version="[1.0,2)",comp3.core.schedulers;version="[1.0,2)"
+ ,comp3.core.servlets;version="[1.0,2)",javax.annotation;version="[1.3
+ ,2)",javax.servlet;version="[3.1,4)",org.apache.sling.api;version="[2
+ .3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.slin
+ g.api.resource;version="[2.11,3)",org.apache.sling.api.servlets;versi
+ on="[2.2,3)",org.apache.sling.models.annotations;version="[1.5,2)",or
+ g.apache.sling.models.annotations.injectorspecific;version="[1.1,2)",
+ org.apache.sling.settings;version="[1.3,2)",org.osgi.service.event;ve
+ rsion="[1.3,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ,osgi.service;objectClass:List<String>="javax.servlet.Servlet",osgi.s
+ ervice;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/comp3.core.filters.LoggingFilter.xml,OSGI-
+ INF/comp3.core.listeners.SimpleResourceListener.xml,OSGI-INF/comp3.co
+ re.schedulers.SimpleScheduledTask.xml,OSGI-INF/comp3.core.servlets.Si
+ mpleServlet.xml
+Sling-Model-Packages: comp3.core.models
+Tool: Bnd-4.2.0.201903051501
+
